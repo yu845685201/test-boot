@@ -60,7 +60,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public Result serverExceptionHandler(Exception e) {
         log.error("服务端异常, {}", e.getMessage(), e);
-        return Result.paramFail(e.getMessage());
+        return Result.serverFail(e.getMessage());
     }
 
 }

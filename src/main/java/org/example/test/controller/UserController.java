@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.example.test.constant.Result;
 import org.example.test.dto.UserPageRequestDTO;
 import org.example.test.entity.UserEntity;
+import org.example.test.exception.ServerException;
 import org.example.test.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -58,6 +59,9 @@ public class UserController {
      */
     @GetMapping("/{id}")
     public Result<UserEntity> get(@PathVariable("id") Long id) {
+        if(true) {
+            throw new ServerException("123");
+        }
         return Result.succ(userService.getById(id));
     }
 

@@ -8,3 +8,4 @@ spring:
 
 test:
   message: DEV
+  token: s2crhzbkUIedoMUZ

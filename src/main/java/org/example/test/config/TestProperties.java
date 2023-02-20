@@ -16,4 +16,5 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "test")
 public class TestProperties {
     private String message;
+    private String token;
 }

@@ -8,3 +8,4 @@ spring:
 
 test:
   message: PROD
+  token: pbZcYAL9kmT1dbnl
