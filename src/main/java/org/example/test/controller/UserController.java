@@ -59,9 +59,6 @@ public class UserController {
      */
     @GetMapping("/{id}")
     public Result<UserEntity> get(@PathVariable("id") Long id) {
-        if(true) {
-            throw new ServerException("123");
-        }
         return Result.succ(userService.getById(id));
     }
 
